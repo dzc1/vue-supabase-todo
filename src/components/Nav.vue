@@ -4,7 +4,11 @@
       <div class="flex justify-between items-center w-full">
         <div class="xl:w-1/3">
           <a class="block max-w-max" href="#">
-            <img class="h-8" src="src/assets/logo-small.svg" alt="" />
+            <img
+              class="h-8"
+              src="https://res.cloudinary.com/dnsnkrcru/image/upload/v1648481844/taskApp/imgs/logo-small_bh8xj2.svg"
+              alt=""
+            />
           </a>
         </div>
         <div class="hidden lg:block lg:w-1/3">
