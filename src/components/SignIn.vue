@@ -13,7 +13,7 @@
                 alt=""
               />
             </router-link>
-            <h3 class="appTitle">Log In to TaskApp</h3>
+            <h3 class="appTitle">Log In to IronTasks</h3>
             <p class="appSubtitle">Start Organizing your tasks todays!</p>
             <p v-if="errorMsg" class="text-md text-red-600 font-body">
               {{ errorMsg }}
@@ -59,7 +59,7 @@
               <span class="font-medium">Don’t have an account? </span>
 
               <PersonalRouter
-                class="font-medium text-green-800 hover:text-green-900 hover:underline"
+                class="font-medium text-blue-800 hover:text-blue-900 hover:underline"
                 :route="route"
                 :buttonText="buttonText"
               />
