@@ -123,28 +123,28 @@ async function signUp() {
 
 // Same function as above but without using pinia
 
-async function signUpWithoutPinia() {
-  if (password.value === confirmPassword.value) {
-    try {
-      const { error } = await supabase.auth.signUp({
-        email: email.value,
-        password: password.value,
-      });
-      if (error) throw error;
-      redirect.push({ path: "/auth" });
-    } catch (error) {
-      errorMsg.value = error.message;
-      setTimeout(() => {
-        errorMsg.value = null;
-      }, 5000);
-    }
-    return;
-  }
-  errorMsg.value = "Passwords do not match";
-  setTimeout(() => {
-    errorMsg.value = null;
-  }, 5000);
-}
+// async function signUpWithoutPinia() {
+//   if (password.value === confirmPassword.value) {
+//     try {
+//       const { error } = await supabase.auth.signUp({
+//         email: email.value,
+//         password: password.value,
+//       });
+//       if (error) throw error;
+//       redirect.push({ path: "/auth" });
+//     } catch (error) {
+//       errorMsg.value = error.message;
+//       setTimeout(() => {
+//         errorMsg.value = null;
+//       }, 5000);
+//     }
+//     return;
+//   }
+//   errorMsg.value = "Passwords do not match";
+//   setTimeout(() => {
+//     errorMsg.value = null;
+//   }, 5000);
+// }
 </script>
 
 <style></style>

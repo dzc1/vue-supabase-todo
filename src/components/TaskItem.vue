@@ -108,7 +108,8 @@ const emit = defineEmits([
   "childToggleEdit",
 ]);
 const props = defineProps(["item"]);
-
+console.log(props.item.title);
+console.log(props.item.description);
 // Error Handling
 function errHandl() {
   errorInput.value = "Field cannot be empty";
