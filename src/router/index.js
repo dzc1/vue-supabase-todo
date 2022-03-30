@@ -3,6 +3,7 @@ import Auth from "../views/Auth.vue";
 import Home from "../views/Home.vue";
 import SignIn from "../components/SignIn.vue";
 import SignUp from "../components/SignUp.vue";
+import Profile from "../views/Profile.vue";
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
     ],
   },
   { path: "/", component: Home },
+  { path: "/profile", component: Profile },
 ];
 const router = createRouter({
   history: createWebHistory(),

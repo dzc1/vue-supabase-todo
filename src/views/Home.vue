@@ -309,6 +309,7 @@
       </div>
     </div>
   </section>
+  <Footer />
 </template>
 
 <script setup>
@@ -316,6 +317,7 @@ import Nav from "../components/Nav.vue";
 import { ref, reactive, computed, onMounted } from "vue";
 import NewTask from "../components/NewTask.vue";
 import TaskItem from "../components/TaskItem.vue";
+import Footer from "../components/Footer.vue";
 import { useTaskStore } from "../store/task";
 import { useUserStore } from "../store/user";
 import moment from "moment";
