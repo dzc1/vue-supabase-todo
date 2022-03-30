@@ -5,6 +5,7 @@ import SignIn from "../components/SignIn.vue";
 import SignUp from "../components/SignUp.vue";
 
 const routes = [
+  { path: "/", component: Home },
   {
     path: "/auth",
     component: Auth,
@@ -13,9 +14,9 @@ const routes = [
       { path: "sign-up", component: SignUp },
     ],
   },
-  { path: "/", component: Home },
 ];
-const router = createRouter({
+const router = createRou;
+ter({
   history: createWebHistory(),
   routes,
 });

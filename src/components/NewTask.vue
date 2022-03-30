@@ -8,6 +8,7 @@
         v-model="newTodo"
         type="text"
         name="newTodo"
+        @keyup="addTodo"
         id="name"
       />
       <input
@@ -15,6 +16,7 @@
         placeholder="Adda a Task Decription"
         v-model="newDescription"
         type="text"
+        @keyup="addTodo"
         name="newDescription"
         id="description"
       />
