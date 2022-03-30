@@ -42,6 +42,7 @@ let newTodo = ref(""); // newTodo input field
 let newDescription = ref(""); // description inputField
 let emptyNew = ref(false); // error box initially hidden
 let errorInput = ref(""); // error message variable
+
 function addTodo() {
   if (newTodo.value === "") {
     emptyNew.value = true; // shows error
