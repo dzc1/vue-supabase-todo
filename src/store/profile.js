@@ -63,7 +63,7 @@ export const useProfileStore = defineStore("profiles", {
             try {
                 const { data, error } = await supabase
                     .storage
-                    .from('avatars')
+                    .from('avatar')
                     .update(path, avatar, {
                         cacheControl: '3600',
                         upsert: false
@@ -80,7 +80,7 @@ export const useProfileStore = defineStore("profiles", {
             try {
                 const { data, error } = await supabase
                     .storage
-                    .from('avatars')
+                    .from('avatar')
                     .upload('public/' + id + '.png', avatar, {
                         cacheControl: '3600',
                         upsert: false
@@ -96,7 +96,7 @@ export const useProfileStore = defineStore("profiles", {
             try {
                 const { publicURL, error } = await supabase
                     .storage
-                    .from('avatars')
+                    .from('avatar')
                     .getPublicUrl('public/' + id + '.png');
                 if (error) throw error
                 return publicURL;
