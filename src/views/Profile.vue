@@ -29,10 +29,9 @@
       </div>
     </section>
 
-    <div
+    <!-- <div
       class="w-3/4 mx-auto my-10 flex flex-col sm:flex-row items-center justify-around gap-y-5"
     >
-      <!-- Profile wrapper -->
       <img
         :src="profiles.avatar_url"
         class="w-48 h-48 rounded-full border-2 border-green-400 shadow-lg object-cover"
@@ -42,10 +41,10 @@
       <p class="font-mono text-3xl font-bold text-green-500">
         {{ profiles.username }}
       </p>
-    </div>
+    </div> -->
 
     <!-- Upload a file Wrapper -->
-    <div
+    <!-- <div
       class="mx-auto w-3/4 items-center flex flex-col sm:flex-row justify-around gap-y-5"
     >
       <label
@@ -67,27 +66,27 @@
       >
         Upload
       </button>
-    </div>
+    </div> -->
 
     <!-- // Back to Dashboard button -->
-    <router-link to="/">
+    <!-- <router-link to="/">
       <button
         class="font-mono block w-full sm:w-60 mx-auto my-20 btn-template bg-green-500 hover:bg-green-600"
       >
         Back to Dashboard
       </button>
-    </router-link>
+    </router-link> -->
 
     <!-- Confirmation message -->
-    <p
+    <!-- <p
       v-if="okMsg"
       class="mx-auto w-3/4 mt-2 p-5 rounded-md text-center bg-gray-100 dark:bg-gray-400 font-bold font-mono text-green-500 italic"
     >
       {{ okMsg }}
-    </p>
+    </p> -->
 
     <!-- Info to Update Wrapper -->
-    <form
+    <!-- <form
       @submit.prevent="updateProfile"
       class="max-w-screen-sm mx-auto w-3/4 p-10 flex flex-col gap-y-5 bg-gray-200 rounded-md shadow-lg dark:bg-gray-500"
     >
@@ -95,7 +94,7 @@
         <label for="username" class="mb-1 text-lg text-green-500"
           >Username</label
         >
-        <!-- Input wrapper -->
+        Input wrapper
         <div class="flex items-center">
           <input
             type="text"
@@ -129,7 +128,7 @@
             >Website</label
           >
         </a>
-        <!-- Input wrapper -->
+        Input wrapper
         <div class="flex items-center">
           <input
             type="text"
@@ -147,7 +146,7 @@
         </div>
       </div>
 
-      <!-- Save Changes Button -->
+      Save Changes Button
       <button
         @submit="updateProfile"
         class="block w-full sm:inline sm:w-48 font-mono mt-5 py-2 px-6 rounded self-start text-white font-bold bg-green-500 border-solid border-2 border-transparent hover:border-green-500 hover:bg-white hover:text-green-500"
@@ -155,14 +154,14 @@
         Save Changes
       </button>
 
-      <!-- Error Handling -->
+      Error Handling
       <p
         v-if="errorMsg"
         class="mt-2 p-5 rounded-md text-center bg-gray-100 dark:bg-gray-400 font-bold font-mono text-red-600 italic"
       >
         {{ errorMsg }}
       </p>
-    </form>
+    </form> -->
   </section>
   <Footer />
 </template>
