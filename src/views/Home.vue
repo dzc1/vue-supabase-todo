@@ -1,15 +1,11 @@
 <template>
   <!-- Import Nav -->
   <Nav />
-  <section
-    class="pt-4 bg-gray-100"
-    style="
-      background-image: url('flex-ui-assets/elements/pattern-white.svg');
-      background-position: center;
-    "
-  >
+  <section class="pt-4 bg-gray-100">
     <div class="container px-4 mx-auto">
-      <div class="max-w-4xl mx-auto text-center">
+      <div
+        class="max-w-4xl mx-auto text-center animate__animated animate__fadeIn"
+      >
         <span
           class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium rounded-full shadow-sm"
           >TASK</span
@@ -230,7 +226,7 @@
 
       <div class="flex flex-wrap -mx-4 mt-24">
         <TaskItem
-          class="animate__animated animate__fadeIn"
+          class="animate__animated animate__fadeInUp"
           @childToggle="toggleTodo"
           @childRemove="remove"
           @childEdit="edit"
